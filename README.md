@@ -14,3 +14,6 @@ API keys are not included, so for functionality, you will want to create an IBM 
 To include these, simple create a .env file in your root directory and store your URL in a variable called service_url and your authentication key in a variable called auth. You should then be good to go. 
 
 To initialise a new database: Simply delete the .db file. When you do this, the next time you run the Flask App, a new database will be generated. 
+
+
+For some weird reason, my main App is called practice.py (I must fix this), so running this python file (provided you have your API keys linked in) will create a wee local server and let you play with the data visualisation. 
