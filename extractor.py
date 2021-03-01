@@ -4,7 +4,8 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson.natural_language_understanding_v1 import Features, KeywordsOptions
 import os
 from settings import auth, service_url
-    
+
+#Please note that you will need to use your own Watson API package. There is a description of how to do this in the readme. 
 
 authenticator = IAMAuthenticator(auth)
 natural_language_understanding = NaturalLanguageUnderstandingV1(
