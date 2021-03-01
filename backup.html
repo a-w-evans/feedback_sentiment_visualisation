@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Form</title>
+</head>
+<body>
+    <section class="hero is-info">
+        <div class="hero-body">
+          <p class="title">
+            Turner's Auctions
+          </p>
+          <p class="subtitle">
+            Thank you for choosing Turner's. We are committed to constant improvement and we value any feedback you may have.
+          </p>
+        </div>
+      </section>
+    <center>
+      <p>Please provide feedback on our staff
+        customer service, mechanics, car quality,
+        insurance, prices, your experience, payment options,
+        or experiences with our website!
+      </p>
+    <form action="/", method = 'post'>
+        <select name="branch">
+            <option value="auckland">Auckland</option>
+            <option value="wellington">Wellington</option>
+            <option value="christchurch">Christchurch</option>
+            <option value="dunedin">Dunedin</option>
+        </select>
+        <textarea name="feed" id="" cols="30" rows="10">Please enter feedback!</textarea>
+        <input type="submit">
+    </form>
+    <form action="/cities_general" method = 'get'>
+      <button type = 'submit'>city overview</button>
+    </form>
+    <form action="/service_areas_general", method = 'get'>
+      <button type = 'submit'>service area overview</button>
+    </form>
+    <form action="/cities_individual" method = "post">
+      <input type="text" name = 'city_name' placeholder='enter a city name'>
+      <button type='submit'>submit</button>
+    </form>
+</center>
+</body>
+</html>
