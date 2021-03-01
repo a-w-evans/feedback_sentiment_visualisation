@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Form</title>
+</head>
+<body>
+    <section class="hero is-info">
+        <div class="hero-body">
+          <p class="title">
+            Turner's Auctions
+          </p>
+          <p class="subtitle">
+            Thank you for choosing Turner's. We are committed to constant improvement and we value any feedback you may have.
+          </p>
+        </div>
+      </section>
+  
+        <section class="columns">
+            <section class="column">
+      <h2 class="title">For customers</h2>
+    <form action="/", method = 'post'>
+        <!-- <select name="branch">
+            <option value="auckland">Auckland</option>
+            <option value="wellington">Wellington</option>
+            <option value="christchurch">Christchurch</option>
+            <option value="dunedin">Dunedin</option>
+        </select> -->
+        <!-- <textarea name="feed" id="" cols="30" rows="10">Please enter feedback!</textarea>
+        <input type="submit"> -->
+        <div class="field">
+            <label class="label">Please enter your feedback here</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="we value for feedback!" name="feed"></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Select a city</label>
+            <div class="control">
+              <div class="select">
+                <select name = 'branch'>
+                    <option value="auckland">Auckland</option>
+                    <option value="wellington">Wellington</option>
+                    <option value="christchurch">Christchurch</option>
+                    <option value="dunedin">Dunedin</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <button type="submit" class="button is-link">Submit</button>
+            </div>
+     
+    </form>
+</section>
+    <section class="column">
+        <h2 class="title">For staff</h1>
+    <form action="/cities_general" method = 'get'>
+      <!-- <button type = 'submit'>city overview</button> -->
+      <div class="field is-grouped">
+        <div class="control">
+          <button type="submit" class="button is-warning">general city overview</button>
+        </div>
+    </form>
+    <form action="/service_areas_general", method = 'get'>
+        <div class="field is-grouped">
+            <div class="control">
+              <button type="submit" class="button is-link">service areas overview</button>
+            </div>
+    </form>
+    <form action="/cities_individual" method = "post">
+      <!-- <input type="text" name = 'city_name' placeholder='enter a city name'> -->
+      <div class="field">
+        <label class="label">Search by city</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="city name" name = 'city_name'>
+        </div>
+      </div>
+      
+      <!-- <button type='submit'>submit</button> -->
+      
+  <div class="field is-grouped">
+    <div class="control">
+      <button type="submit" class="button is-danger">general cities</button>
+    </div>
+    </form>
+</section>
+
+</section>
+<footer class="footer has-background-dark">
+    <div class="content has-text-centered">
+      <p>
+        Copyright 2021 Fake Turners
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
